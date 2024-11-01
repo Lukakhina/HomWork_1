@@ -56,14 +56,15 @@ public class Example3 {
 
             return newHotel;    // возвращаем новый массив (новый отель) в выше стоящий метод
         } else { // Хотим уменьшить количество номеров (номера делаем большими)
-            int[] newHotel = new int[quantityRooms];
+            int[] newHotel1 = new int[quantityRooms];
 
             for (int i = 0; i < quantityRooms; i++) { // копируем нужное количество номеров из исходного массива
-                newHotel[i] = array[i];
+                newHotel1[i] = array[i];
+            }
 
                 return array; // пока возвращаем исходный массив в выше стоящий метод
                 // попробуйте сделать самостоятельно реконструкцию с уменьшением количества номеров
-            }
+
         }
 
 
