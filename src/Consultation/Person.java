@@ -8,17 +8,17 @@ package Consultation;
 public class Person {
     private String name;
     private int age;
-    private String hobby;
+    private String email;
 
-    public Person(String name, int age, String hobby) {
+    public Person(String name, int age, String email) {
         this.name = name;
         this.age = age;
-        this.hobby = hobby;
+        this.email = email;
     }
 
     public String infoPerson() {
         // Формирование строки по шаблону с подстановкой значений
-        return String.format("Person %s, Age: %d, Hobby: %s", name, age, hobby);
+        return String.format("Person %s, Age: %d, Hobby: %s", name, age, email);
     }
 
     public String getName() {
