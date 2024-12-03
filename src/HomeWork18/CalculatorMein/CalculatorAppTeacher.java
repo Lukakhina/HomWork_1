@@ -7,9 +7,16 @@ public class CalculatorAppTeacher {
         System.out.println(sum);
 
         // Ctrl + B (курсов на название метода, который вызываем)
-       // int divide = Calculator.divide(1, 0);
-       // System.out.println(divide);
-        //10  и 11 строчку я закоментировала  что то пошло не так
+        // public static double divide(double a, double b) - так объявляется у вас метод
+        // в классе Calculator(Calculator.java). Здесь мы видим, что метод возвращает
+        // значение типа double. Поэтому и переменная, в которую вы помещаете результат
+        // выполнения этого метода, должна быть того же типа, то есть double.
+        double divideResult = Calculator.divide(1, 0);
+
+        // Второй вариант - явное приведение типа, в круглых скобках мы указываем
+        // необходимый тип, в нашем случае - (int)
+        int divide = (int) Calculator.divide(1, 0);
+        System.out.println(divide);
 
 
         System.out.println("\n====== Calculator end =========== ");
